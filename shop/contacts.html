@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>index.html</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1><p title="drunkard.org">Пьяница.орг</p></h1>
+	<div class="top_menu">
+		<a href="index.html" class="menu">Главная</a>
+		<a href="catalog.html" class="menu">Каталог</a>
+		<a href="contacts.html" class="menu">Контакты</a>
+		</div>
+		<hr>
+		<h2><p title="Scríobh chugainn!">Напишите нам!</p></h2>
+		<form action="thanks.html">
+			<div>
+				<label for="name">Имя</label><br>
+				<input size="50px" type="text" id="name" placeholder="Ваше имя">
+			</div>
+			<div>
+				<label for="email">E-mail</label><br>
+				<input size="50px" type="email" id="email" placeholder="e-mail" required>
+			</div>
+			<!-- Варианты выпадающего списка -->
+			<!-- 1. Не смог избавиться от пустого поля, но что бы изначально поле было пустым -->
+			<!-- <div>
+				<label for="theme">Тема сообщения</label><br>
+				<select name="Тема" id="theme" required>
+					<option value=""></option>
+					<option value="2">Пожелание</option>
+					<option value="3">Жалоба</option>
+					<option value="4">Другое</option>
+				</select>
+			</div> -->
+			<!-- 2. После выбора отсальные варианты фильтруются, что не удобно -->
+			<div>
+				<label for="theme2">Тема сообщения</label><br>
+				<input size="50px" list="theme2">
+				<datalist id="theme2">
+					<option value="Пожелание">
+					<option value="Жалоба">
+					<option value="Другое">
+				</datalist>
+			</div>
+			<!-- Простое поле -->
+			<!-- <div>
+			<label for="theme3">Тема</label><br>
+				<input type="text" id="theme3" placeholder="Тема сообщения" required> 
+			</div> -->
+			<div>
+				<label for="message">Сообщение</label><br>
+				<textarea size="50px" name="message" id="message" cols="50" rows="10" required></textarea>
+				<!-- <input type="textarea" id="message" placeholder="Ваше сообщение"> -->
+			</div>
+			<div>
+				<input type="submit" value="Отправить">
+			</div>
+		</form>
+		<h2><p title="ár suíomh">Наши координаты</p></h2>
+		<ul>
+			<li>+353 1 408 4800</li>
+			<li>St James's Gate, Ushers, Dublin 8, IRELAND</li>
+			<li>aine.kavanagh@diageo.com</li>
+		</ul>
+		<a href="index.html"><< назад </a>
+		<hr>
+		<p title="&copy;Gach ceart ar cosaint!">&copy;Все права защищены!</p>
+	</ul>
+</body>
+</html>
