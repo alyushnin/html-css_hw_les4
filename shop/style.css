@@ -1,56 +1,68 @@
-/*@font-face {
-   	font-family: 'PT Sans Narrow', sans-serif;
-    src: url(PT_Sans-Narrow-Web-Regular.ttf);
-}
-Почему-то через фонт-фейс шрифт не подключался, пришлось через импорт*/
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Barrio|Ubuntu&subset=cyrillic,cyrillic-ext');
 body {
-	background: #f8f8f8; /*В качестве фона на всех страницах установить цвет #f8f8f8*/
+	width: 100%;
+	height: 100%;
+	background: #f8f8f8;
+	margin: 0;
+	padding: 0;
+	color: #212121; /*Цвет текста MD_Grey900*/
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	float: left;
 }
-
+span { 
+	color: #FF6F00; /*Цвет текста MD_Amber900*/
+}
 .header {
-	color: black; /*Цвет текста черный*/
-	font-size: 18px; /*Размер шрифта 18px*/
-	font-weight: 400; /*Насыщенность шрифта 400*/
-	background-color: #eaeaea; /*цвет фона #eaeaea*/
-
+	width: 78%;
+	height: 40px;
+	margin: 0 auto;
+	padding: 1%;
+	background: #212121; /*Цвет текста MD_Grey900*/
 }
-.short_desk { /*Для текста краткого описания товар*/
-	color: #707070; /*Цвет текста #707070*/
-	font-size: 14px; /*Размер шрифта 14px*/
-	font-style: italic; /*Начертание шрифта italic*/
-	line-height: 16px; /*Высоту текста 16px*/
+.header_logo {
+	width: 20%;
+	float: left;
+	padding: 5px;
 }
-.long_desk { /*Для текста подробного описания товара*/
-	color: #484343; /*Цвет текста  #484343*/
-	font-size: 16px; /* Размер шрифта 16px */
-	font-weight: 400; /*Насыщенность шрифта 400 */
-	line-height: 24px; /*Высоту текста 24px */
-	text-align: left; /*Расположение текста по левому краю*/
+.header_logo a {
+	color: #FFD54F; /*Цвет текста MD_Amber300*/
+	font-size: 3em;
+	font-family: 'Barrio', sans-serif;
+	text-decoration: none;
 }
-.ability { 
-	color: #484343; /*Цвет текста  #484343*/
-	font-family: 'PT Sans Caption', sans-serif;
-	font-size: 17px; /* Размер шрифта 16px */
-	font-weight: 200; /*Насыщенность шрифта 400 */
-	line-height: 24px; /*Высоту текста 24px */
+.header_menu {
+	width: 60%;
+	float: left;
+	padding: 5px;
+	radi: 5px;
 }
-input {
-	color: black;
-	size: 20px;
-	font-family: 'PT Sans Caption', sans-serif;
-
+.header_menu_links {
+	float: left;
+	font-size: 1.4em;
+	margin-right: 2%;
+	padding: 5px;
 }
-
-.top-menu_links {
-	color: black; /*Цвет текста черный*/
-	font-size: 26px; /*Размер шрифта 18px*/
-	font-family: 'PT Sans Caption', sans-serif;
+.header_menu_links a {
+	text-decoration: none;
+	color: #FF8F00; /*Цвет текста MD_Amber900*/
 }
-
-.top-menu_links:hover {
-	color: lightblue;
-  	
-
+.header_menu_links:hover {
+	color: #FF6F00; /*Цвет текста MD_Amber900*/
+}
+.content {
+	clear: both;
+	width: 74%;
+	height: 40px;
+	margin: 0 auto;
+	padding: 2% 2% 3% 4%; /*сверху справа снизу слева*/
+	background: #E0E0E0; /*Цвет текста MD_Grey300*/
+}
+.footer {
+	width: 78%;
+	height: 40px;
+	margin: 0 auto;
+	padding: 1%;
+	background: #E0E0E0; /*Цвет текста MD_Grey300*/
 }
