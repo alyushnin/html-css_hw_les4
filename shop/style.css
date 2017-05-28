@@ -54,7 +54,6 @@ span {
 .content {
 	clear: both;
 	width: 74%;
-	height: 40px;
 	margin: 0 auto;
 	padding: 2% 2% 3% 4%; /*сверху справа снизу слева*/
 	background: #E0E0E0; /*Цвет текста MD_Grey300*/
@@ -66,3 +65,12 @@ span {
 	padding: 1%;
 	background: #E0E0E0; /*Цвет текста MD_Grey300*/
 }
+
+/*Временно для задания*/
+/*При вводе текста в поле “Email” на странице контактной информации поменять цвет текста и цвет поля.*/
+.colortext {
+	background-color: orange; /* Цвет фона */
+	color: white; /* Цвет текста */
+}
+/*При вводе текста в текстовые поля каждое слово должно начинаться с большой буквы, даже если пользователь будет вводить с маленькой буквы.*/
+input, textarea {text-transform: capitalize;}
